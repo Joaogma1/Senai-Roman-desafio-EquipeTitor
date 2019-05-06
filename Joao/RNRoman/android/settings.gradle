@@ -1,0 +1,3 @@
+rootProject.name = 'RNRoman'
+
+include ':app'
