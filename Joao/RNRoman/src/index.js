@@ -6,7 +6,7 @@ import {
   } from "react-navigation";
   import App from '../App'
   import Main from './activities/main'
-  
+  import CadastroProjeto from './activities/cadastrarProjeto'
   import login from './activities/login';
 
   const AuthStack = createStackNavigator({login});
@@ -14,7 +14,7 @@ import {
   const MainNavigator = createBottomTabNavigator(
     {
         Main,
-        App
+        CadastroProjeto
     },
     {
       initialRouteName: "Main",
@@ -22,10 +22,10 @@ import {
       tabBarOptions: {
         showLabel: true,
         showIcon: true,
-        inactiveBackgroundColor: "#dd99ff",
-        activeBackgroundColor: "#B727FF",
-        activeTintColor: "#FFFFFF",
-        inactiveTintColor: "#FFFFFF",
+        inactiveBackgroundColor: "black",
+        activeBackgroundColor: "white",
+        activeTintColor: "blue",
+        inactiveTintColor: "white",
         style: {
           height: 50
         }
@@ -33,7 +33,6 @@ import {
     }
   );
 
-//   export default createAppContainer(AuthStack);
   export default createAppContainer(
       createSwitchNavigator(
           {
