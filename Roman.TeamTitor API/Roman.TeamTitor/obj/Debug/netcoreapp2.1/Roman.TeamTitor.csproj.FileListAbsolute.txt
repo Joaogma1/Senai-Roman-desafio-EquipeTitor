@@ -1,0 +1,25 @@
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\bin\Debug\netcoreapp2.1\Roman.TeamTitor.deps.json
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\bin\Debug\netcoreapp2.1\Roman.TeamTitor.runtimeconfig.json
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\bin\Debug\netcoreapp2.1\Roman.TeamTitor.runtimeconfig.dev.json
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\bin\Debug\netcoreapp2.1\Roman.TeamTitor.dll
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.csprojAssemblyReference.cache
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.csproj.CoreCompileInputs.cache
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.RazorAssemblyInfo.cache
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.RazorAssemblyInfo.cs
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.AssemblyInfoInputs.cache
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.AssemblyInfo.cs
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\Projeto Roman(Equipe Titor)\roman\Senai-Roman-desafio-EquipeTitor\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.RazorTargetAssemblyInfo.cache
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.csproj.CoreCompileInputs.cache
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.RazorAssemblyInfo.cache
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.RazorAssemblyInfo.cs
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.AssemblyInfoInputs.cache
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.AssemblyInfo.cs
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\bin\Debug\netcoreapp2.1\Roman.TeamTitor.deps.json
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\bin\Debug\netcoreapp2.1\Roman.TeamTitor.runtimeconfig.json
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\bin\Debug\netcoreapp2.1\Roman.TeamTitor.runtimeconfig.dev.json
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\bin\Debug\netcoreapp2.1\Roman.TeamTitor.dll
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\bin\Debug\netcoreapp2.1\Roman.TeamTitor.pdb
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.RazorTargetAssemblyInfo.cache
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.dll
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.pdb
+C:\Users\51418943800\Desktop\SPRINT 5 (REACT NATIVE)\psiu bruno\Roman.TeamTitor\Roman.TeamTitor\obj\Debug\netcoreapp2.1\Roman.TeamTitor.csprojAssemblyReference.cache
