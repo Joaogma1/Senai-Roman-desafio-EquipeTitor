@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Picker, TextInput } from 'react-native'
+import { Text, View, Picker, TextInput, TouchableOpacity } from 'react-native'
 import jwt from "jwt-decode";
 class cadastrarProjeto extends Component {
     constructor(props) {
@@ -14,8 +14,8 @@ class cadastrarProjeto extends Component {
         }
 
     }
-    componentDidMount(){
-        
+    componentDidMount() {
+
     }
 
     _buscarDadosDoStorage = async () => {
@@ -24,7 +24,7 @@ class cadastrarProjeto extends Component {
             if (value !== null) {
                 this.setState({ nome: jwt(value).Nome });
                 this.setState({ token: value });
-                this.setState({ idUsuario: jwt(value).idUsuario  }); // colocar como vem da api
+                this.setState({ idUsuario: jwt(value).idUsuario }); // colocar como vem da api
             }
         } catch (error) { }
     };
@@ -34,12 +34,12 @@ class cadastrarProjeto extends Component {
             nome: this.state.nomeProjeto,
             tema: this.state.tema,
             idUsuario: this.state.idUsuario
-        },{
-            headers:{
-                'Content-Type': 'application/json',
-                'Authorization' : "bearer " + this.state.token
-            }
-        });
+        }, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': "bearer " + this.state.token
+                }
+            });
 
         const token = response.data.token;
         await AsyncStorage.setItem('userToken', token);
@@ -74,11 +74,8 @@ class cadastrarProjeto extends Component {
                             <Picker.Item label={Element.nome} value={Element.id} />
                         ))}
                     </Picker>
-                    <TouchableOpacity
-                        // style={styles.btnLogin}
-                        onPress={this._solicitarEnvio}
-                    >
-                        <Text style={styles.btnLoginText}>LOGIN</Text>
+                    <TouchableOpacity onPress={this._solicitarEnvio}>
+                        <Text >Enviar</Text>
                     </TouchableOpacity>
                 </View>
 

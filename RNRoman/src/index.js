@@ -40,7 +40,7 @@ import {
               MainNavigator
           },
           {
-              initialRouteName: 'MainNavigator'
+              initialRouteName: 'AuthStack'
           }
       )
   );
