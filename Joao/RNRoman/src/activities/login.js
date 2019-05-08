@@ -23,7 +23,7 @@ import api from '../services/api'
         };
     }
     // faz requerimento de login e redireciona
-    solicitarLogin = async () => {
+    _solicitarLogin = async () => {
         const response = await api.post('/login', {
             email: this.state.email,
             senha: this.state.senha
@@ -45,7 +45,7 @@ import api from '../services/api'
                     onChangeText={senha => this.setState({ senha })}
                 />
                 <TouchableOpacity
-                    onPress={this.solicitarLogin}
+                    onPress={this._solicitarLogin}
                 ></TouchableOpacity>
             </View>
         );
