@@ -8,24 +8,28 @@ import {
   import Main from './activities/main'
   import CadastroProjeto from './activities/cadastrarProjeto'
   import login from './activities/login';
+  import gerenciarTemas from './activities/gerenciarTemas';
+  import gerenciarEquipes from './activities/gerenciarEquipes';
 
   const AuthStack = createStackNavigator({login});
 
   const MainNavigator = createBottomTabNavigator(
     {
         Main,
-        CadastroProjeto
+        CadastroProjeto,
+        gerenciarTemas,
+        gerenciarEquipes
     },
     {
       initialRouteName: "Main",
       swipeEnabled: true,
       tabBarOptions: {
-        showLabel: true,
+        showLabel: false,
         showIcon: true,
-        inactiveBackgroundColor: "black",
-        activeBackgroundColor: "white",
-        activeTintColor: "blue",
-        inactiveTintColor: "white",
+        inactiveBackgroundColor: "#22416F",
+        activeBackgroundColor: "#22416F",
+        activeTintColor: "#22416F",
+        inactiveTintColor: "#22416F",
         style: {
           height: 50
         }
@@ -40,7 +44,7 @@ import {
               MainNavigator
           },
           {
-              initialRouteName: 'AuthStack'
+              initialRouteName: 'MainNavigator'
           }
       )
   );

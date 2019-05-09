@@ -5,21 +5,42 @@ class main extends Component {
 
     // Colocar o icone
 
-    // static navigationOptions = {
-    //     tabBarIcon: ({ tintColor }) => (
-    //         <Image
-    //             source={require("../assets/img/checklist.png")}
-    //         />
-    //     )
-    // };
+    static navigationOptions = {
+        tabBarIcon: ({ tintColor }) => (
+            <Image
+                source={require("../assets/img/projectlist.png")}
+                style={styles.tabNavigatorIconHome}
+            />
+        )
+    };
     constructor(props) {
         super(props);
         this.state = {
-            ListaDeProjetos: []
+            ListaDeProjetos: [
+                {
+                    id: 1,
+                    idAutor: 4,
+                    idTema: 3,
+                    nome: "Projeto 1",
+                    idAutorNavigation: {
+                        id: 4,
+                        idCargo: 2,
+                        idEquipe: 1,
+                        nome: "João",
+                        email: "joao@email.com",
+                        projetos: []
+                    },
+                    idTemaNavigation: {
+                        id: 3,
+                        nome: "Séries",
+                        projetos: []
+                    }
+                }
+            ]
         }
     }
-    componentWillMount(){
-        this.solicitarProjetos();
+    componentWillMount() {
+        // this.solicitarProjetos();
     }
     solicitarProjetos = async () => {
         const response = await api.get('/CaminhoGetApi')
@@ -29,19 +50,20 @@ class main extends Component {
     renderizarItens = ({ item }) => (
         <View >
             <View >
-                <Text >{item.autor}</Text>
-                <Text >{item.tema}</Text>
+                <Text >{item.idAutorNavigation.nome}</Text>
+                <Text >{item.idTemaNavigation.nome}</Text>
             </View>
             <View>
-                <Text >{item.Nome}</Text>
+                <Text >{item.nome}</Text>
             </View>
         </View>
     );
     render() {
         return (
-            <View style="none">
-                <Text style="none">Roman</Text>
-                <View>
+            <View style={styles.main}>
+                <Text style={styles.h1}>ROMAN</Text>
+                <Text style={styles.h2}>Projetos</Text>
+                <View style={styles.projetos}>
                     <FlatList
                         data={this.setState.ListaDeProjetos}
                         keyExtractor={item => item.id}
@@ -51,4 +73,26 @@ class main extends Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+    main: {
+        alignItems: "center",
+        backgroundColor: "#08244D"
+    },
+    h1: {
+        color: "white",
+        fontSize: 25,
+        marginTop: 10
+    },
+    h2: {
+        color: "white",
+        fontSize: 40,
+        marginTop: 70,
+        marginBottom: 70
+    },
+    tabNavigatorIconHome: {
+        width: 35,
+        height: 35,
+    },
+})
 export default main;
