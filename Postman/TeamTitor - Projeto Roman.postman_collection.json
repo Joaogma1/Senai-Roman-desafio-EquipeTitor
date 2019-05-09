@@ -1,0 +1,230 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TeamTitor - Projeto Roman",
+		"_postman_id": "787accf1-8590-87e1-cd0c-d9826595fd5b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:5000/api/Login/Cadastrar",
+					"request": {
+						"url": "http://localhost:5000/api/Login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Email\":\"bruno@gmail.com\",\n\t\"Senha\":\"bruno\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projeto",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:5000/api/Projetos/Cadastrar",
+					"request": {
+						"url": "http://localhost:5000/api/Projetos/Cadastrar",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"IdAutor\":2,\n\t\"IdTema\":1,\n\t\"Nome\":\"prejeto Carfel 2.0\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5000/api/Projetos/Listar",
+					"request": {
+						"url": "http://localhost:5000/api/Projetos/Listar",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Equipe",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:5000/api/Equipes/Cadastrar",
+					"request": {
+						"url": "http://localhost:5000/api/Equipes/Cadastrar",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Nome\":\"tururu\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5000/api/Equipes/Listar",
+					"request": {
+						"url": "http://localhost:5000/api/Equipes/Listar",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tema",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:5000/api/Temas/Cadastrar",
+					"request": {
+						"url": "http://localhost:5000/api/Temas/Cadastrar",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Nome\":\"temateste\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5000/api/Temas/Listar",
+					"request": {
+						"url": "http://localhost:5000/api/Temas/Listar",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5000/api/Temas/Atualizar",
+					"request": {
+						"url": "http://localhost:5000/api/Temas/Atualizar",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Id\":\"2\",\n\t\"Nome\":\"Educação financeira\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5000/api/Temas/Deletar/?",
+					"request": {
+						"url": "http://localhost:5000/api/Temas/Deletar/2",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:5000/api/Usuarios/Listar",
+					"request": {
+						"url": "http://localhost:5000/api/Usuarios/Listar",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:5000/api/Usuarios/Cadastrar",
+					"request": {
+						"url": "http://localhost:5000/api/Usuarios/Cadastrar",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t \"idCargo\": 2,\n        \"idEquipe\": 1,\n        \"nome\": \"pedro\",\n        \"email\": \"p@gmail.com\",\n        \"senha\": \"pe\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
