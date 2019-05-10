@@ -25,8 +25,12 @@ namespace Roman.TeamTitor.Domains
         {
             if (!optionsBuilder.IsConfigured)
             {
+#pragma warning disable CS1030 // diretiva de #aviso
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress; Initial Catalog=senai_roman_tarde;user id=sa;password=132");
+                //optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress; Initial Catalog=senai_roman_tarde;user id=sa;password=132");
+                optionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS; Initial Catalog=senai_roman_tarde;Integrated Security=True");
+#pragma warning restore CS1030 // diretiva de #aviso
+
             }
         }
 

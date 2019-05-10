@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, Image, TouchableOpacity, StyleSheet, TextInput } from 'react-native'
+import Axios from 'axios';
 
 export default class gerenciarTemas extends Component {
 
@@ -19,7 +20,7 @@ export default class gerenciarTemas extends Component {
         }
     }
     _submeterEquipe = async () => {
-        await api.post('/api/Equipes/Cadastrar',
+        await Axios.post('http://192.168.0.12:5000/api/Equipes/Cadastrar',
             {
                 nome: this.state.nome
             },
@@ -47,7 +48,7 @@ export default class gerenciarTemas extends Component {
                         placeholder="Nome da equipe"
                         onChangeText={nome => this.setState({ nome })}
                     />
-                    <TouchableOpacity style={styles.btn} onPress={this._submeterTemas}>
+                    <TouchableOpacity style={styles.btn} onPress={this._submeterEquipe}>
                         <Text style={styles.btntxt} >Enviar</Text>
                     </TouchableOpacity>
                 </View>

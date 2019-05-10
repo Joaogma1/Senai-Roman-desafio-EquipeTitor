@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, Image, TouchableOpacity, StyleSheet, TextInput } from 'react-native'
+import Axios from 'axios';
 
 export default class gerenciarTemas extends Component {
 
@@ -19,7 +20,7 @@ export default class gerenciarTemas extends Component {
         }
     }
     _submeterTemas = async () => {
-        await api.post('/api/Temas/Cadastrar',
+        await Axios.post('http://192.168.0.12:5000/api/Temas/Cadastrar',
             {
                 nome: this.state.nome
             },

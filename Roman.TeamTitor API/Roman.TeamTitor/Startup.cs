@@ -72,7 +72,7 @@ namespace Roman.TeamTitor
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseCors("CorsPolicy");
+            app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
             app.UseAuthentication();
 

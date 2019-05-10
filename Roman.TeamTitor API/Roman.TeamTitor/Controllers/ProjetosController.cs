@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Roman.TeamTitor.Domains;
 
 namespace Roman.TeamTitor.Controllers
@@ -39,7 +40,7 @@ namespace Roman.TeamTitor.Controllers
             {
                 using (RomanContext ctx = new RomanContext())
                 {
-                    return Ok(ctx.Projetos.ToList());
+                    return Ok(ctx.Projetos.Include(x => x.IdAutorNavigation).Include(X => X.IdTemaNavigation).ToList());
                 }
                 
             }

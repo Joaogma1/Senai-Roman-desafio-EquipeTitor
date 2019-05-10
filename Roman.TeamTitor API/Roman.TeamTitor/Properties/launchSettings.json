@@ -17,8 +17,8 @@
     },
     "Roman.TeamTitor": {
       "commandName": "Project",
-      "launchBrowser": true,
-      "applicationUrl": "http://localhost:5000",
+      "launchBrowser": false,
+      "applicationUrl": "http://192.168.0.12:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -3,35 +3,48 @@ import {
     View,
     StyleSheet,
     Text,
-    Image,
-    ImageBackground,
     TextInput,
     TouchableOpacity,
     AsyncStorage
 } from 'react-native'
-import api from '../services/api'
- class login extends Component {
+import Axios from 'axios';
+class login extends Component {
     static navigationOptions =
         {
             header: null
         }
     constructor(props) {
         super(props);
-        this.state = {
-            email: '',
-            senha: ''
-        };
+        this.state = { email: "", senha: ""};
     }
-    // faz requerimento de login e redireciona
-    _solicitarLogin = async () => {
-        const response = await api.post('/login', {
-            email: this.state.email,
-            senha: this.state.senha
-        });
-        const token = response.data.token;
-        await AsyncStorage.setItem('userToken', token);
-        this.props.navigation.navigate("NavegacaoAutenticada")
+
+    _solicitarEnvio = async () => {
+        await Axios.post('http://192.168.0.12:5000/api/Login',
+            {
+                email: this.state.email,
+                senha: this.state.senha
+            },
+            {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.status === 200) {
+                    const token = response.data;
+                    AsyncStorage.setItem('userToken', token);
+                    this.props.navigation.navigate("MainNavigator")
+                }
+            })
+            .catch(error => console.warn(error))
+        // .then(data => {
+        //     if (data.status === 200) {
+        //  alerta de enviado com sucesso   
+        //     }
+        // })
     };
+
+
     render() {
         return (
             <View style={styles.main}>
@@ -52,7 +65,7 @@ import api from '../services/api'
                     />
                     <TouchableOpacity
                         style={styles.btn}
-                        onPress={this._realizarLogin}
+                        onPress={this._solicitarEnvio}
                     >
                         <Text style={styles.btntxt}>ENTRAR</Text>
                     </TouchableOpacity>
@@ -104,7 +117,7 @@ const styles = StyleSheet.create({
     },
     btntxt: {
         color: "white",
-        fontSize: 20 
+        fontSize: 20
     }
 })
 export default login;

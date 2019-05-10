@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, Picker, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native'
 import jwt from "jwt-decode";
+import Axios from 'axios';
 class cadastrarProjeto extends Component {
 
     static navigationOptions = {
@@ -19,7 +20,7 @@ class cadastrarProjeto extends Component {
             nome: "",
             token: "",
             tema: null,
-            idUsuario: null,
+            idUsuario: 1,
             listaTemas: []
         }
 
@@ -40,24 +41,26 @@ class cadastrarProjeto extends Component {
     };
 
     _solicitarEnvio = async () => {
-        const response = await api.post('/api/Projetos/Cadastrar', {
-            idAutor: this.state.idUsuario,
-            nome: this.state.nomeProjeto,
-            idTema: this.state.tema
-        }, {
+        await Axios.post('http://192.168.0.12:5000/api/Projetos/Cadastrar',
+            {
+                idAutor: this.state.idUsuario,
+                nome: this.state.nomeProjeto,
+                idTema: this.state.tema
+            },
+            {
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': "bearer " + this.state.token
+                    'Content-Type': 'application/json'
                 }
-            });
-
-        const token = response.data.token;
-        await AsyncStorage.setItem('userToken', token);
-        this.props.navigation.navigate("NavegacaoAutenticada")
+            })
+        // .then(data => {
+        //     if (data.status === 200) {
+        //  alerta de enviado com sucesso   
+        //     }
+        // })
     };
 
     _solicitarTemas = async () => {
-        const response = await api.get('/api/Temas/Listar')
+        const response = await Axios.get('http://192.168.0.12:5000/api/Temas/Listar')
         const data = response.data;
         this.setState({ listaTemas: data });
     }
